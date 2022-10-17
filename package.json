@@ -1,0 +1,32 @@
+{
+  "name": "@oit/vue-actions",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": {
+      "require": "./dist/vue-actions.umd.cjs",
+      "import": "./dist/vue-actions.js"
+    }
+  },
+  "main": "./dist/vue-actions.umd.cjs",
+  "module": "./dist/vue-actions.js",
+  "files": ["dist"],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.4",
+    "@uxuip/eslint-config": "^0.1.6",
+    "@vitejs/plugin-vue2": "^2.0.0",
+    "eslint": "^8.23.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vue": "^2.7.10"
+  },
+  "eslintConfig": {
+    "extends": "@uxuip"
+  }
+}
