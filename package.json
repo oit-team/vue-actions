@@ -1,7 +1,7 @@
 {
   "name": "@oit/vue-actions",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "exports": {
     ".": {
@@ -11,7 +11,9 @@
   },
   "main": "./dist/vue-actions.umd.cjs",
   "module": "./dist/vue-actions.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
