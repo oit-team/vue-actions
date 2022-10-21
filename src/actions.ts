@@ -77,7 +77,7 @@ export class Actions {
   private findPositionElement(el: HTMLElement) {
     let target = el
     while (target) {
-      if (getComputedStyle(target).position !== 'static')
+      if (!['static', 'relative'].includes(getComputedStyle(target).position))
         return target
 
       target = target.parentElement as HTMLElement
