@@ -27,7 +27,7 @@ export class Actions {
   constructor() {
     this.observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry)
+        // console.log(entry)
 
         const actionName = (entry.target as HTMLElement).dataset.actionName
         if (!actionName)
@@ -96,7 +96,7 @@ export class Actions {
     if (!obs) {
       obs = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          console.log(entry)
+          // console.log(entry)
 
           const actionName = (entry.target as HTMLElement).dataset.actionName
           if (!actionName)

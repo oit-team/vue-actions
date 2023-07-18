@@ -33,9 +33,9 @@ const directive: DirectiveOptions = {
     actions.register(el, actionName, Object.keys(binding.modifiers) as any)
   },
 
-  unbind(el) {
-    console.log(el)
-  },
+  // unbind(el) {
+  // console.log(el)
+  // },
 }
 
 export default directive
